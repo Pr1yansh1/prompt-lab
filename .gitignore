@@ -1,0 +1,46 @@
+# Python / build
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# uv / venv
+.venv/
+.uv/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Local configs / env
+.env
+.env.local
+*.secrets.*
+*.key
+*.pem
+
+# Results & logs
+eval/results/
+*.log
+
+# Cache
+.cache/
+.mypy_cache/
+.pytype/
+.pytest_cache/
+
+
+# Backup files
+*~
+*.swp
+*.swo
+
+# Node (in case you add a tiny UI)
+node_modules/
+
