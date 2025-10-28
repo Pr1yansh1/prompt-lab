@@ -19,6 +19,7 @@ It runs test cases directly through AWS Bedrock (Claude 3.5 Sonnet) to ensure co
 ```bash
 # 1. Install dependencies
 pip install -r requirements.txt
+``` 
 
 # 2. Configure AWS credentials
 export AWS_PROFILE=prompt-refinement
@@ -27,7 +28,7 @@ export AWS_REGION=us-west-2
 
 
 ##Project Structure 
-
+```bash
 global_system_prompt.txt
 prompts/
   interpersonal/v1.yaml
@@ -37,15 +38,16 @@ eval/
   results/
 manifest.yaml
 harness.py
-
+```
 
 ##Output Location:
 
+```bash
 eval/results/<timestamp>/
   ├─ results.csv
   ├─ results.md
   └─ results.json
-
+```
 ##Contributing/Changing a Prompt:
 
 # Create a new branch
