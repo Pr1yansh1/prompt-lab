@@ -26,7 +26,7 @@ export AWS_REGION=us-west-2
 # Ensure your AWS profile has Bedrock invoke access
 
 
-Project Structure 
+##Project Structure 
 
 global_system_prompt.txt
 prompts/
@@ -39,14 +39,14 @@ manifest.yaml
 harness.py
 
 
-Output Location:
+##Output Location:
 
 eval/results/<timestamp>/
   ├─ results.csv
   ├─ results.md
   └─ results.json
 
-Contributing/Changing a Prompt:
+##Contributing/Changing a Prompt:
 
 # Create a new branch
 git checkout -b feature/prompt-update
