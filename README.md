@@ -18,16 +18,17 @@ It runs test cases directly through AWS Bedrock (Claude 3.5 Sonnet) to ensure co
 
 ```bash
 # 1. Install dependencies
-pip install -r requirements.txt
-``` 
+pip install -r requirements.txt 
 
 # 2. Configure AWS credentials
 export AWS_PROFILE=prompt-refinement
 export AWS_REGION=us-west-2
 # Ensure your AWS profile has Bedrock invoke access
+```
 
 
-##Project Structure 
+##Project Structure
+ 
 ```bash
 global_system_prompt.txt
 prompts/
@@ -49,7 +50,7 @@ eval/results/<timestamp>/
   └─ results.json
 ```
 ##Contributing/Changing a Prompt:
-
+```bash
 # Create a new branch
 git checkout -b feature/prompt-update
 
@@ -59,12 +60,10 @@ nano prompts/interpersonal/v2.yaml
 # Add test cases
 nano eval/cases.yaml
 
-# Run harness and check results
-python harness.py --env dev
-less eval/results/<timestamp>/results.md
+# Run harness 
 
 # Commit and push
 git add .
 git commit -m "Updated interpersonal prompt v2"
 git push origin feature/prompt-update
-
+```
