@@ -1,0 +1,7 @@
+defaults:
+  dev:
+    interpersonal: interpersonal-v1
+    emotion: emotion-v1
+    mindfulness: mindfulness-v1
+    distress: distress-v1
+
